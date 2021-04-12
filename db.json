@@ -1,0 +1,18 @@
+{
+  "authors": [
+    {
+      "name": "test",
+      "lastName": "test",
+      "birthDate": "5/4/2021",
+      "email": "test@gmail.com"
+    }
+  ],
+  "publications":[
+    {
+      "author":0,
+      "date":"4/5/2021",
+      "title":"testing",
+      "body":"this is testing"
+    }
+  ]
+}
