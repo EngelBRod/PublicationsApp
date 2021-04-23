@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/dev';
+const url = 'http://localhost:4000/dev';
 const request = require('supertest')(url);
 
 describe('getPublications', () => {

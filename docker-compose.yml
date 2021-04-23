@@ -1,0 +1,33 @@
+version: "3"
+services:
+  backend:
+    container_name: backend
+    build: ./backend
+    networks:
+      - backend
+      - frontend
+    ports:
+      - "4000:4000"
+    environment: 
+      - PORT=4000
+      - DB_HOSTNAME=sweatworks.ciheueemzgcu.us-east-2.rds.amazonaws.com
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - DB_NAME=sweatworks
+      - DB_PASSWORD=root1739
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    networks:
+      - frontend
+    ports:
+      - "3000:3000"
+    environment: 
+      - REACT_APP_PUBLICATIONS=https://ctoeaxuur5.execute-api.us-east-1.amazonaws.com/dev/publications
+      - REACT_APP_AUTHORS=https://ctoeaxuur5.execute-api.us-east-1.amazonaws.com/dev/authors
+    depends_on:
+      - backend    
+networks:
+  backend:
+  frontend:
+

@@ -24,7 +24,7 @@ const PublicationFooter = styled(Grid)`
 `;
 
 function Publication({
-  title, body, date, authorName,
+  title, body, date, time,
 }) {
   return (
     <PublicationInfo item>
@@ -34,7 +34,7 @@ function Publication({
       <Typography paragraph align="left">{`" ${body} "`}</Typography>
       <PublicationFooter container direction="row" justify="space-between">
         <Grid item>
-          <Selector component="span">{ authorName[0].name }</Selector>
+          <Selector component="span">{ time }</Selector>
         </Grid>
         <Grid item>
           <Selector component="span">{ date }</Selector>
@@ -50,12 +50,12 @@ Publication.defaultProps = {
   title: '',
   body: '',
   date: '',
-  authorName: [],
+  time: '',
 };
 Publication.propTypes = {
   title: PropTypes.string,
   body: PropTypes.string,
   date: PropTypes.string,
-  authorName: PropTypes.arrayOf(PropTypes.shape([])),
+  time: PropTypes.string,
 
 };

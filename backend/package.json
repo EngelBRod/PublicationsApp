@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "integration": "jest __tests__/*",
-    "serverless-off": "sls offline",
+    "serverless-off": "sls offline --httpPort 4000",
     "reset-db": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "deploy-server": "sls deploy"
   },
