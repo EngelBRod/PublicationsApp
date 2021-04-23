@@ -53,13 +53,26 @@ From the frontend directory runs the following commands:
 # API INTEGRATION AND UNIT TESTING
 From the project directory runs the following commands:
 - npm run serverless-off
-- npm run integration
+- npm run integration 
+
+# API INTEGRATION AND UNIT TESTING FROM DOCKER
+- npm run integration from docker's backend cli
 
 # RESET, CREATE AND SEED THE DATABASE
 From the project directory runs the following commands:
 - npm run reset-db
 
 # ENVIRONMENT VARIABLES
-Since this project is for testing purposes if running the project locally please set the enviroment variables
+Since this project is for testing purposes the environment variables are being shared.
+DO NOT SHARE ENVIROMENT VARIABLES IN PUBLIC PROJECTS!
 
+Backend:
+- DB_HOSTNAME = sweatworks.ciheueemzgcu.us-east-2.rds.amazonaws.com
+- DB_PORT = 5432
+- DB_USERNAME = postgres
+- DB_NAME = sweatworks
+- DB_PASSWORD = root1739
 
+Frontend:
+- REACT_APP_PUBLICATIONS = https://ctoeaxuur5.execute-api.us-east-1.amazonaws.com/dev/publications
+- REACT_APP_AUTHORS = https://ctoeaxuur5.execute-api.us-east-1.amazonaws.com/dev/authors

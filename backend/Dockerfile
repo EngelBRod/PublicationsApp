@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["sh","-c","npm run reset-db && npm run serverless-off"]
+CMD ["sh","-c","npm run reset-db && npm run serverless-off && npm run integration"]
