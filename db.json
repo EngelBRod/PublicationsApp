@@ -1,18 +1,155 @@
 {
   "authors": [
     {
-      "name": "test",
-      "lastName": "test",
-      "birthDate": "5/4/2021",
-      "email": "test@gmail.com"
+      "id":1,
+      "name": "edgar",
+      "lastName": "Alonso",
+      "birthdate": "5/4/2021",
+      "email": "edgar@gmail.com"
+    },
+    {
+      "id":2,
+      "name": "victor",
+      "lastName": "Alonso",
+      "birthdate": "5/6/2021",
+      "email": "victor@gmail.com"
+    },
+    {
+      "id":3,
+      "name": "luis",
+      "lastName": "perez",
+      "birthdate": "5/9/2021",
+      "email": "luis@gmail.com"
     }
   ],
   "publications":[
-    {
-      "author":0,
-      "date":"4/5/2021",
-      "title":"testing",
+    { "id":1,
+      "author":1,
+      "authorEmail":"edgar@gmail.com",
+      "authorName":"edgar",
+      "date":"2020-12-02 ",
+      "title":"testing 1",
       "body":"this is testing"
-    }
+    },
+    { "id":2,
+      "author":1,
+      "authorEmail":"edgar@gmail.com",
+      "authorName":"edgar",
+      "date":"2021-11-02 ",
+      "title":"testing 2",
+      "body":"this is testing"
+    },
+    { "id":3,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":4,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":5,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":6,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":7,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":8,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":9,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":10,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":11,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":12,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":13,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":14,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":15,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    },
+    { "id":16,
+      "author":2,
+      "authorEmail":"victor@gmail.com",
+      "authorName":"victor",
+      "date":"2020-10-02 ",
+      "title":"testing 3",
+      "body":"this is testing"
+    }  
   ]
 }

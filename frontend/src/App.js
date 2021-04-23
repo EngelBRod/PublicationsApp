@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import { Provider } from 'react-redux';
+import ConfigureStore from './redux/configureStore';
+import Main from './components/main';
 
 function App() {
+  const store = ConfigureStore;
   return (
-    <div className="App">
-      <h1>Test</h1>
-    </div>
+    <Provider store={store()}>
+      <Main />
+    </Provider>
   );
 }
 
