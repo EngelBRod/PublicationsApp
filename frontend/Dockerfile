@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /client
+WORKDIR /frontend
 
 COPY package*.json /client/
 
