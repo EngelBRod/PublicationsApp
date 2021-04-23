@@ -23,6 +23,7 @@ This project was created using the following technologies:
 # LIVE
 
 To see this project live click de following link  [PublishApp](https://main.d29ab0o80arhf.amplifyapp.com/)
+THIS PROJECT IS RUNNING ON AWS
 
 # ENDPOINTS
 
