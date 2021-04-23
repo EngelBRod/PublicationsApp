@@ -35,7 +35,7 @@ You can learn more in the [ PublishApp documentation](https://documenter.getpost
 
 # LOCAL WITH DOCKER
 
-In the console from your project directory: 
+From the projects directory runs the following commands: 
 - docker-compose up --build
 
 # LOCAL WITHOUT DOCKER
@@ -59,5 +59,7 @@ From the project directory runs the following commands:
 From the project directory runs the following commands:
 - npm run reset-db
 
+# ENVIRONMENT VARIABLES
+Since this project is for testing purposes if running the project locally please set the enviroment variables
 
 
