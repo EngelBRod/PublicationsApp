@@ -40,23 +40,23 @@ In the console from your project directory:
 
 # LOCAL WITHOUT DOCKER
 
-* From the backend directory runs the following commands:
+From the backend directory runs the following commands:
 - npm install
 - npm run reset-db
 - npm run serverless-off
 
-* From the frontend directory runs the following commands:
+From the frontend directory runs the following commands:
 - yarn install
 - yarn build
 - yarn start
 
 # API INTEGRATION AND UNIT TESTING
-* From the project directory runs the following commands:
+From the project directory runs the following commands:
 - npm run serverless-off
 - npm run integration
 
 # RESET, CREATE AND SEED THE DATABASE
-- From the project directory runs the following commands:
+From the project directory runs the following commands:
 - npm run reset-db
 
 
