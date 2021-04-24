@@ -30,11 +30,8 @@ function Authors({
   name, lastName, id, birthday, email,
 }) {
   const dispatch = useDispatch();
-  // eslint-disable-next-line no-console
-  console.log(id);
+
   function selectAuthor() {
-    // eslint-disable-next-line no-console
-    console.log(id);
     dispatch(saveSelectedAuthor(id, name, lastName, email, birthday));
   }
   return (

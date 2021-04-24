@@ -53,7 +53,7 @@ function Toolbar() {
         </FormControl>
         <FormControl>
           <InputLabel id="sortByDate">Sort By Date</InputLabel>
-          <Sorter onChange={settinOrder} labelId="sortByDate">
+          <Sorter value="" onChange={settinOrder} labelId="sortByDate">
             <MenuItem value="Newest">Newest</MenuItem>
             <MenuItem value="Oldest">Oldest</MenuItem>
           </Sorter>

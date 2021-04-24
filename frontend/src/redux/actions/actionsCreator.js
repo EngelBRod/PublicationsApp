@@ -61,7 +61,6 @@ export const ordering = (order) => (dispatch) => {
 };
 
 export const saveSelectedAuthor = (id, name, lastname, email, birthday) => (dispatch) => {
-  // eslint-disable-next-line no-console
   dispatch(selectAuthor(id, name, lastname, email, birthday));
 };
 

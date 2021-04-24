@@ -1,5 +1,6 @@
 import * as ActionTypes from '../actions/actionTypes';
 
+// Applying the searching , ordering,  and pagination operations
 const setPublicationView = (publications, order, actualPage, searchBar, selectedAuthor) => {
   // searching publications
   const publicationFiltered = publications.filter((publication) => {
@@ -57,6 +58,7 @@ const Publications = (state = {
   },
 }, action) => {
   switch (action.type) {
+    // Adding publications when website loads
     case ActionTypes.ADD_PUBLICATIONS: {
       const { publicationsView, pages } = setPublicationView(
         action.payload, state.order, state.actualPage, state.searchBar, state.selectedAuthor.id,
@@ -66,6 +68,7 @@ const Publications = (state = {
       };
     }
 
+    // Ordering publications when option selected
     case ActionTypes.ORDERING_PUBLICATIONS: {
       const { publicationsView, pages } = setPublicationView(
         state.publications, action.payload, state.actualPage,
@@ -76,6 +79,7 @@ const Publications = (state = {
       };
     }
 
+    // Searching publications when input received on search bar
     case ActionTypes.SEARCHING_PUBLICATIONS: {
       const { publicationsView, pages } = setPublicationView(
         state.publications, state.order, state.actualPage, action.payload, state.selectedAuthor,
@@ -85,6 +89,7 @@ const Publications = (state = {
       };
     }
 
+    // Changing pages
     case ActionTypes.SELECT_PAGE: {
       const { publicationsView, pages } = setPublicationView(
         state.publications, state.order, action.payload, state.searchBar, state.selectedAuthor,
@@ -93,6 +98,7 @@ const Publications = (state = {
         ...state, publicationsView, actualPage: action.payload, pages,
       };
     }
+    // Selecting specific author
     case ActionTypes.SELECT_AUTHOR: {
       const { publicationsView, pages } = setPublicationView(
         state.publications, state.order, 1, state.searchBar, action.payload,

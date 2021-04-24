@@ -7,6 +7,7 @@ const Authors = (state = {
   },
 }, action) => {
   switch (action.type) {
+    // Adding authors when website loads
     case ActionTypes.ADD_AUTHORS:
       return { ...state, authors: action.payload };
     default:

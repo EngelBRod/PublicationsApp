@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
-
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
-
 import { connect, useDispatch } from 'react-redux';
 import { requestPublications, requestAuthors } from '../redux/actions/actionsCreator';
-
 import Publications from './publications/publications';
 import Sidebar from './sidebar/sidebar';
 import Toolbar from './toolbar/toolbar';

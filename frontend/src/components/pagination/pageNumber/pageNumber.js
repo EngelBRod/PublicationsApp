@@ -13,8 +13,6 @@ const PaginatorButton = styled(Button)`
 function PageNumber({ number }) {
   const dispatch = useDispatch();
   function setPage() {
-    // eslint-disable-next-line no-console
-    console.log('working');
     dispatch(saveCurrentPage(number));
   }
   return (
