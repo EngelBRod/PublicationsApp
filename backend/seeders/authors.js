@@ -1,3 +1,4 @@
+// Authors seed data
 module.exports = {
   up: (queryInterface) => queryInterface.bulkInsert('authors', [
     {

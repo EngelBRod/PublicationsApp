@@ -2,12 +2,14 @@ const sequelize = require('./db/database');
 const Publication = require('./models/Publication');
 const Author = require('./models/Author');
 
+// Database connection
 sequelize.authenticate()
   // eslint-disable-next-line no-console
   .then(() => console.log('Connected'))
   // eslint-disable-next-line no-console
   .catch((err) => console.log(`Error: ${err}`));
 
+// Publications and Authors Endpoint functions
 module.exports.getPublications = async (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
   await Publication.findAll()

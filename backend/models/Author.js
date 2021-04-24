@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db/database');
 
+// Authors' model
 const author = db.define('author', {
   id: {
     type: Sequelize.INTEGER,

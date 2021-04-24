@@ -1,6 +1,7 @@
 const url = 'http://localhost:4000/dev';
 const request = require('supertest')(url);
 
+// Testing status and correct response int publicationss get method
 describe('getPublications', () => {
   // eslint-disable-next-line arrow-body-style
   it('Testing status and correct response', () => {
@@ -11,6 +12,8 @@ describe('getPublications', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in publications' post method
 describe('postPublications', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `
@@ -28,6 +31,8 @@ describe('postPublications', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in publications' update method
 describe('updatePublications', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `
@@ -46,6 +51,8 @@ describe('updatePublications', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in publications' delete method
 describe('deletePublications', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `
@@ -61,6 +68,7 @@ describe('deletePublications', () => {
   });
 });
 
+// Testing status and correct response in authors get method
 describe('getAuthors', () => {
   // eslint-disable-next-line arrow-body-style
   it('Testing status and correct response', () => {
@@ -71,6 +79,8 @@ describe('getAuthors', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in authors' post method
 describe('postAuthors', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `
@@ -88,6 +98,8 @@ describe('postAuthors', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in authors' update method
 describe('updateAuthors', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `
@@ -106,6 +118,8 @@ describe('updateAuthors', () => {
       });
   });
 });
+
+// Testing status and incorrect parameters handling in authors' delete method
 describe('deleteAuthors', () => {
   it('Testing status and incorrect parameters handling', () => {
     const body = `

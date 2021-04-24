@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../db/database');
 
+// Publications' model
 const publication = db.define('publication', {
   id: {
     type: Sequelize.NUMBER,
@@ -51,7 +52,5 @@ const publication = db.define('publication', {
 }, {
   timestamps: false,
 });
-// eslint-disable-next-line no-console
-console.log(publication);
 
 module.exports = publication;

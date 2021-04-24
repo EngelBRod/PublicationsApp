@@ -1,3 +1,4 @@
+// PUblications seed data
 module.exports = {
   up: (queryInterface) => queryInterface.bulkInsert('publications', [
     {
